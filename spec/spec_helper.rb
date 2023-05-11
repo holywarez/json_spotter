@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "json/spotter"
+require "json_spotter"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

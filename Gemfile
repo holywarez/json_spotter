@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in json-spotter.gemspec
+# Specify your gem's dependencies in json_spotter.gemspec
 gemspec
 
 gem "rake", "~> 13.0"
