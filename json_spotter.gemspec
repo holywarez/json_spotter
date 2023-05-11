@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "lib/json_spotter/spotter"
+require_relative "lib/json_spotter"
 
 Gem::Specification.new do |spec|
   spec.platform = Gem::Platform::RUBY
