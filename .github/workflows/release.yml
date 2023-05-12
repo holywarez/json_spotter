@@ -18,5 +18,4 @@ jobs:
           release-type: ruby
           package-name: json_spotter
           version-file: "lib/json_spotter/version.rb"
-          bump-minor-pre-major: true
-          bump-patch-for-minor-pre-major: true
+          bump-minor-pre-major: yes
