@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.3](https://github.com/holywarez/json_spotter/compare/v0.1.2...v0.1.3) (2023-05-15)
+
+
+### Bug Fixes
+
+* add *.gem to the gitignore ([e5eb29b](https://github.com/holywarez/json_spotter/commit/e5eb29b13863c1716095cea21a56a5f7fdff89cc))
+* add license to the gemspec ([e5eb29b](https://github.com/holywarez/json_spotter/commit/e5eb29b13863c1716095cea21a56a5f7fdff89cc))
+
 ## [0.1.2](https://github.com/holywarez/json_spotter/compare/v0.1.1...v0.1.2) (2023-05-15)
 
 
