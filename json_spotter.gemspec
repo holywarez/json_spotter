@@ -8,6 +8,7 @@ Gem::Specification.new do |spec|
   spec.version = JsonSpotter::VERSION
   spec.authors = ["Anatoly Lapshin"]
   spec.email = ["a.lapshin@3commas.io"]
+  spec.license  = "MIT"
 
   spec.summary = "Ruby gem to extract data from JSON streams"
   spec.description = "json_spotter is a gem to process big json documents in a stream-way. " \
