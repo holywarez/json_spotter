@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.5](https://github.com/holywarez/json_spotter/compare/v0.1.4...v0.1.5) (2023-05-16)
+
+
+### Bug Fixes
+
+* tryout ([ef6a9a8](https://github.com/holywarez/json_spotter/commit/ef6a9a852e560dd8cba3fa83859d28450bd7e924))
+
 ## [0.1.4](https://github.com/holywarez/json_spotter/compare/v0.1.3...v0.1.4) (2023-05-16)
 
 
