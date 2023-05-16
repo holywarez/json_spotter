@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.4](https://github.com/holywarez/json_spotter/compare/v0.1.3...v0.1.4) (2023-05-16)
+
+
+### Bug Fixes
+
+* try out the --key flag ([d4c7d00](https://github.com/holywarez/json_spotter/commit/d4c7d00317a72d68a84ad9858ea819ecec3a1857))
+* try out the --key flag ([#16](https://github.com/holywarez/json_spotter/issues/16)) ([7f63c56](https://github.com/holywarez/json_spotter/commit/7f63c5690340100d24ac6cb8c56abbfcf3e3d451))
+
 ## [0.1.3](https://github.com/holywarez/json_spotter/compare/v0.1.2...v0.1.3) (2023-05-15)
 
 
