@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.8](https://github.com/holywarez/json_spotter/compare/v0.1.7...v0.1.8) (2023-05-16)
+
+
+### Bug Fixes
+
+* get rid of extra debug outputs ([03d41a2](https://github.com/holywarez/json_spotter/commit/03d41a265517e1057a1a8e6a22d9092bc5b2e565))
+
 ## [0.1.7](https://github.com/holywarez/json_spotter/compare/v0.1.6...v0.1.7) (2023-05-16)
 
 
