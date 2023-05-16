@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.6](https://github.com/holywarez/json_spotter/compare/v0.1.5...v0.1.6) (2023-05-16)
+
+
+### Bug Fixes
+
+* debug the key ([965a801](https://github.com/holywarez/json_spotter/commit/965a801d8f49db5a862c64c1b6a446ca29a58038))
+* debug the key ([#21](https://github.com/holywarez/json_spotter/issues/21)) ([c670219](https://github.com/holywarez/json_spotter/commit/c6702199c34c5626dbd470c10ebd553cf9b4cdc5))
+
 ## [0.1.5](https://github.com/holywarez/json_spotter/compare/v0.1.4...v0.1.5) (2023-05-16)
 
 
