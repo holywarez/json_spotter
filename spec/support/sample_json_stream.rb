@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'stringio'
+
 class SampleJsonStream < StringIO
   def initialize(json, chunk_size = 10)
     super(json, 'r')
