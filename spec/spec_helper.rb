@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require_relative "../lib/json_spotter"
+require_relative "support/sample_json_factory"
+require_relative "support/sample_json_stream"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

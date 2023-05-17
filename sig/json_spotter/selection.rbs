@@ -1,0 +1,17 @@
+module JsonSpotter
+  class Selection
+    include Enumerable[Hash[_ToS, any]]
+
+    interface _SelectionStream
+      def read: () -> String
+    end
+
+    type query = Hash[_ToS, query] | array_query
+    type array_query = Array[array_query | query]
+
+    @query: query
+    @stream: _SelectionStream
+
+    def initialize: (_SelectionStream, query: query) -> void
+  end
+end
