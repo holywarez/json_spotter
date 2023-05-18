@@ -1,6 +1,7 @@
 # JsonSpotter
 
 [![Gem Version](https://badge.fury.io/rb/json_spotter.svg)](https://badge.fury.io/rb/json_spotter)
+[![CodeFactor](https://www.codefactor.io/repository/github/holywarez/json_spotter/badge)](https://www.codefactor.io/repository/github/holywarez/json_spotter)
 
 TODO: Delete this and the text below, and describe your gem
 
