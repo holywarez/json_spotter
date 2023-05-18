@@ -10,9 +10,27 @@ module JsonSpotter
       def match?: (untyped) -> untyped
     end
 
+    interface _StreamProcessor
+      def start_document: () { () -> void } -> void
+      def end_document: () { () -> void } -> void
+
+      def start_object: () { () -> void } -> void
+      def end_object: () { () -> void } -> void
+
+      def start_array: () { () -> void } -> void
+      def end_array: () { () -> void } -> void
+
+      def key: () { (String) -> void } -> void
+      def value: () { (String) -> void } -> void
+
+      def <<: (String) -> void
+    end
+
     @query: _Query
     @stream: _SelectionStream
 
-    def initialize: (_SelectionStream, query: _Query) -> void
+    @stream_processor: _StreamProcessor
+
+    def initialize: (_SelectionStream, query: _Query, stream_processor: _StreamProcessor) -> void
   end
 end

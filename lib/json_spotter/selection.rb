@@ -4,9 +4,10 @@ module JsonSpotter
   class Selection
     include Enumerable
 
-    def initialize(stream, query:)
+    def initialize(stream, query:, stream_processor:)
       @stream = stream
       @query = query
+      @stream_processor = stream_processor
     end
 
     def each(&block)
