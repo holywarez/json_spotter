@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative 'json_spotter/version'
+require_relative 'json_spotter/json_path_query'
 require_relative 'json_spotter/selection'
 
 module JsonSpotter

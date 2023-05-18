@@ -6,12 +6,13 @@ module JsonSpotter
       def read: () -> String
     end
 
-    type query = Hash[_ToS, query] | array_query
-    type array_query = Array[array_query | query]
+    interface _Query
+      def match?: (untyped) -> untyped
+    end
 
-    @query: query
+    @query: _Query
     @stream: _SelectionStream
 
-    def initialize: (_SelectionStream, query: query) -> void
+    def initialize: (_SelectionStream, query: _Query) -> void
   end
 end
