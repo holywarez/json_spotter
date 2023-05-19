@@ -3,11 +3,12 @@
 require 'spec_helper'
 
 RSpec.describe JsonSpotter::Selection do
-  subject(:selection) { JsonSpotter::Selection.new(stream, query: query) }
+  subject(:selection) { JsonSpotter::Selection.new(stream, query: query, stream_processor: processor) }
 
   let(:query) { }
   let(:json) { '{}' }
   let(:stream) { SampleJsonStream.new(json) }
+  let(:processor) { JSON::Stream::Parser.new }
 
   context 'when json is blank' do
     subject { selection.any? }

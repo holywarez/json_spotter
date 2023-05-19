@@ -1,3 +1,9 @@
 class SampleJsonStream
+  include JsonSpotter::Selection::_SelectionStream
+
   @chunk_size: Integer
+
+  @closed: bool
+
+  def initialize: (String, ?chunk_size: Integer) -> void
 end

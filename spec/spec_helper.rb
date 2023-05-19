@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'json/stream'
+
 require_relative "../lib/json_spotter"
 require_relative "support/sample_json_factory"
 require_relative "support/sample_json_stream"
