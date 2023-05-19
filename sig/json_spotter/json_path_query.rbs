@@ -1,0 +1,9 @@
+module JsonSpotter
+  class JsonPathQuery
+    include Selection::_Query
+
+    @json_path: String
+
+    def initialize: (String) -> void
+  end
+end

@@ -1,0 +1,59 @@
+module JsonSpotter
+  class Selection
+    include Enumerable[Hash[_ToS, any]]
+
+    type reference_type = Integer | String
+
+    interface _SelectionStream
+      def read: () -> String
+      def open?: () -> bool
+    end
+
+    interface _Query
+      def match?: (untyped) -> untyped
+    end
+
+    interface _StreamProcessor
+      def start_document: () { () -> void } -> void
+      def end_document: () { () -> void } -> void
+
+      def start_object: () { () -> void } -> void
+      def end_object: () { () -> void } -> void
+
+      def start_array: () { () -> void } -> void
+      def end_array: () { () -> void } -> void
+
+      def key: () { (String) -> void } -> void
+      def value: () { (any) -> void } -> void
+
+      def <<: (String) -> void
+    end
+
+    class Node
+      attr_reader last_key: reference_type?
+      attr_accessor parent: Node?
+      attr_accessor reference: reference_type?
+      attr_accessor value: any?
+
+      def initialize: (?parent: Node?, ?reference: reference_type?, ?value: any?) -> void
+
+      def on_subitem: (any?) -> reference_type?
+
+      def root?: -> bool
+    end
+
+    @current: Node?
+    @query: _Query
+    @stream: _SelectionStream
+
+    @stream_processor: _StreamProcessor
+
+    def initialize: (_SelectionStream, query: _Query, stream_processor: _StreamProcessor) -> void
+
+    private
+
+    def reference_for: (Node?) -> reference_type?
+
+    def setup_handlers: { (any) -> void } -> void
+  end
+end
